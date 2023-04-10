@@ -1,0 +1,959 @@
+sparsh-tiger@TIGER02139:~$ ls
+01-Assignment-1                    libgit2             mod1-assignment1-2  shell-lesson-data  sparsh.pub  ticgit
+Miniconda3-latest-Linux-x86_64.sh  longest.sh          my_unix             simplegit-progit   test
+README                             mod1-assignment1-1  mylibgit            sparsh             test2
+sparsh-tiger@TIGER02139:~$ cd shell-lesson-data/
+-bash: cd: shell-lesson-data/: Permission denied
+sparsh-tiger@TIGER02139:~$ cd 01-Assignment-1/
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ ls
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ git remote add origin https://github.com/Sparsh-Tiger/01-Assignment-1.git
+fatal: remote origin already exists.
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ cd
+sparsh-tiger@TIGER02139:~$ cd
+sparsh-tiger@TIGER02139:~$ ls
+01-Assignment-1                    longest.sh          mylibgit           sparsh.pub
+Miniconda3-latest-Linux-x86_64.sh  mod1-assignment1-1  shell-lesson-data  test
+README                             mod1-assignment1-2  simplegit-progit   test2
+libgit2                            my_unix             sparsh             ticgit
+sparsh-tiger@TIGER02139:~$ cd shell-lesson-data
+-bash: cd: shell-lesson-data: Permission denied
+sparsh-tiger@TIGER02139:~$ ls -la
+total 74020
+drwxr-xr-x 1 sparsh-tiger sparsh-tiger      512 Apr  3 17:39 .
+drwxr-xr-x 1 root         root              512 Mar 22  2022 ..
+-rw------- 1 sparsh-tiger sparsh-tiger     1678 Apr  3 18:03 .bash_history
+-rw-r--r-- 1 sparsh-tiger sparsh-tiger      220 Mar 22  2022 .bash_logout
+-rw-r--r-- 1 sparsh-tiger sparsh-tiger     3771 Mar 22  2022 .bashrc
+drwxr-xr-x 1 root         root              512 Mar 29  2022 .git
+-rw-r--r-- 1 sparsh-tiger sparsh-tiger      206 Apr  3 17:36 .gitconfig
+drwxr-xr-x 1 sparsh-tiger sparsh-tiger      512 Mar 22  2022 .landscape
+-rw-r--r-- 1 sparsh-tiger sparsh-tiger        0 Apr  3 11:32 .motd_shown
+-rw-r--r-- 1 sparsh-tiger sparsh-tiger      807 Mar 22  2022 .profile
+-rw-r--r-- 1 sparsh-tiger sparsh-tiger        0 Mar 22  2022 .sudo_as_admin_successful
+drwxr-xr-x 1 sparsh-tiger sparsh-tiger      512 Apr  3 17:40 01-Assignment-1
+---------- 1 sparsh-tiger sparsh-tiger 75660608 Mar 25  2022 Miniconda3-latest-Linux-x86_64.sh
+-rw-r--r-- 1 root         root               11 Mar 28  2022 README
+drwxr-xr-x 1 root         root              512 Mar 28  2022 libgit2
+-rw-r--r-- 1 root         root               47 Mar 24  2022 longest.sh
+-rw-r--r-- 1 sparsh-tiger sparsh-tiger   109056 Mar 24  2022 mod1-assignment1-1
+-rw-r--r-- 1 sparsh-tiger sparsh-tiger     2048 Mar 25  2022 mod1-assignment1-2
+-rw-r--r-- 1 sparsh-tiger sparsh-tiger      276 Apr  3 11:28 my_unix
+drwxr-xr-x 1 root         root              512 Mar 28  2022 mylibgit
+d--------- 1 sparsh-tiger sparsh-tiger      512 Mar 22  2022 shell-lesson-data
+drwxr-xr-x 1 root         root              512 Mar 29  2022 simplegit-progit
+-rw------- 1 root         root             2655 Mar 31  2022 sparsh
+-rw-r--r-- 1 root         root              569 Mar 31  2022 sparsh.pub
+drwxr-xr-x 1 sparsh-tiger sparsh-tiger      512 Mar 23  2022 test
+drwxr-xr-x 1 sparsh-tiger sparsh-tiger      512 Mar 23  2022 test2
+drwxr-xr-x 1 root         root              512 Mar 29  2022 ticgit
+sparsh-tiger@TIGER02139:~$ cd shell-lesson-data/
+-bash: cd: shell-lesson-data/: Permission denied
+sparsh-tiger@TIGER02139:~$ sudo su
+[sudo] password for sparsh-tiger:
+Sorry, try again.
+[sudo] password for sparsh-tiger:
+Sorry, try again.
+[sudo] password for sparsh-tiger:
+sudo: 2 incorrect password attempts
+sparsh-tiger@TIGER02139:~$ script -a Git-tutorial
+Script started, file is Git-tutorial
+sparsh-tiger@TIGER02139:~$ cd 01-Assignment-1/
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ git config --list --show-origin
+file:/home/sparsh-tiger/.gitconfig      user.name=Sparsh-Tiger
+file:/home/sparsh-tiger/.gitconfig      user.email=sparsh.srivastav@tigeranalytics.com
+file:/home/sparsh-tiger/.gitconfig      core.editor='C:\Program Files\Notepad++\notepad++.exe' -multiInst -notabar -nosession -noPlugin
+file:/home/sparsh-tiger/.gitconfig      init.defaultbranch=main
+file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=true
+file:.git/config        core.bare=false
+file:.git/config        core.logallrefupdates=true
+file:.git/config        remote.origin.url=https://github.com/Sparsh-Tiger/01-Assignment-1.git
+file:.git/config        remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ git config --list
+user.name=Sparsh-Tiger
+user.email=sparsh.srivastav@tigeranalytics.com
+core.editor='C:\Program Files\Notepad++\notepad++.exe' -multiInst -notabar -nosession -noPlugin
+init.defaultbranch=main
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/Sparsh-Tiger/01-Assignment-1.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ git help <verb>
+bash: syntax error near unexpected token `newline'
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ git help config
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ git add -h
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ git clone https://github.com/libgit2/libgit2 mylibgit
+Cloning into 'mylibgit'...
+remote: Enumerating objects: 121273, done.
+remote: Counting objects: 100% (121273/121273), done.
+remote: Compressing objects: 100% (33241/33241), done.
+remote: Total 121273 (delta 86295), reused 120957 (delta 86023), pack-reused 0
+Receiving objects: 100% (121273/121273), 62.42 MiB | 1.69 MiB/s, done.
+Resolving deltas: 100% (86295/86295), done.
+Updating files: 100% (11666/11666), done.
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ ls
+mylibgit
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ cd mylibgit/
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ ls
+AUTHORS         README.md     ci     docs      git.git-authors  script
+CMakeLists.txt  SECURITY.md   cmake  examples  include          src
+COPYING         api.docurium  deps   fuzzers   package.json     tests
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ cd..
+cd..: command not found
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ cd
+sparsh-tiger@TIGER02139:~$ cd 01-Assignment-1/
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mylibgit/
+
+nothing added to commit but untracked files present (use "git add" to track)
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ echo 'mylibgit' > README
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ cd mylibgit/
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git add readme
+fatal: pathspec 'readme' did not match any files
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git add README
+fatal: pathspec 'README' did not match any files
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git add README.md
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git init
+Reinitialized existing Git repository in /home/sparsh-tiger/01-Assignment-1/mylibgit/.git/
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ ls
+AUTHORS         README.md     ci     docs      git.git-authors  script
+CMakeLists.txt  SECURITY.md   cmake  examples  include          src
+COPYING         api.docurium  deps   fuzzers   package.json     tests
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git add readme
+fatal: pathspec 'readme' did not match any files
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git add readme.txt
+fatal: pathspec 'readme.txt' did not match any files
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git add CONTRIBUTING.MD
+fatal: pathspec 'CONTRIBUTING.MD' did not match any files
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git add CONTRIBUTING.md
+fatal: pathspec 'CONTRIBUTING.md' did not match any files
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ ls
+AUTHORS         README.md     ci     docs      git.git-authors  script
+CMakeLists.txt  SECURITY.md   cmake  examples  include          src
+COPYING         api.docurium  deps   fuzzers   package.json     tests
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ nano new_file.txt
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new_file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git add new_file.txt _file.txt
+fatal: pathspec '_file.txt' did not match any files
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git add new_file.txt
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new_file.txt
+
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ nano new_file.txt
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new_file.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   new_file.txt
+
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git add new_file.txt
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new_file.txt
+
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git init
+Reinitialized existing Git repository in /home/sparsh-tiger/01-Assignment-1/mylibgit/.git/
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git add new_file.txt
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new_file.txt
+
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git commit new_file.txt
+hint: Waiting for your editor to close the file... 'C:\Program Files\Notepad++\notepad++.exe' -multiInst -notabar -nosession -noPlugin: 1: C:\Program Files\Notepad++\notepad++.exe: not found
+error: There was a problem with the editor ''C:\Program Files\Notepad++\notepad++.exe' -multiInst -notabar -nosession -noPlugin'.
+Please supply the message using either -m or -F option.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new_file.txt
+
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git commit -m  new_file.txt
+[main 954d31fb6] new_file.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new_file.txt
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status -s
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ cat .gitignore
+/build/
+.DS_Store
+*~
+.*.swp
+/tags
+CMakeSettings.json
+.vs
+.idea
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ nano gitignore.txt
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ ren gitignore.txt .gitignore
+
+Command 'ren' not found, but there are 17 similar ones.
+
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ nano .gitignore
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ cat .gitignore
+/build/
+.DS_Store
+*~
+.*.swp
+/tags
+CMakeSettings.json
+.vs
+.idea
+*.a
+!lib.a
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitignore.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git diff
+diff --git a/.gitignore b/.gitignore
+index 1b482f038..0f2331ae1 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -6,3 +6,5 @@
+ CMakeSettings.json
+ .vs
+ .idea
++*.a
++!lib.a
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git diff --staged
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git commit
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitignore.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ rm new_file.txt
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        deleted:    new_file.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitignore.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git rm new_file.txt
+rm 'new_file.txt'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    new_file.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitignore.txt
+
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git commit -m .gitignore
+[main 7c79ad8bd] .gitignore
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 new_file.txt
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitignore.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git rm \*~
+fatal: pathspec '*~' did not match any files
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ ls
+AUTHORS         SECURITY.md   deps      git.git-authors  script
+CMakeLists.txt  api.docurium  docs      gitignore.txt    src
+COPYING         ci            examples  include          tests
+README.md       cmake         fuzzers   package.json
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ vim  new_file.txt
+
+[1]+  Stopped                 vim new_file.txt
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ ls
+AUTHORS         SECURITY.md   deps      git.git-authors  script
+CMakeLists.txt  api.docurium  docs      gitignore.txt    src
+COPYING         ci            examples  include          tests
+README.md       cmake         fuzzers   package.json
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ nano new_file.txt
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git mv new_file.txt new_file_updated.txt
+fatal: not under version control, source=new_file.txt, destination=new_file_updated.txt
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ mk dir new
+mk: command not found
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ mkdir new
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git mv new_file.txt new
+fatal: not under version control, source=new_file.txt, destination=new/new_file.txt
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git log
+commit 7c79ad8bd74a34fd4d44a8ddba48b7d834448d8d (HEAD -> main)
+Author: Sparsh-Tiger <sparsh.srivastav@tigeranalytics.com>
+Date:   Tue Apr 4 19:20:58 2023 +0530
+
+    .gitignore
+
+commit 954d31fb6c7c773ed96c8b459bd600f5ae88cdde
+Author: Sparsh-Tiger <sparsh.srivastav@tigeranalytics.com>
+Date:   Tue Apr 4 17:51:18 2023 +0530
+
+    new_file.txt
+
+commit 2f20fe8869d7a1df7c9b7a9e2939c1a20533c6dc (origin/main, origin/HEAD)
+Merge: 9bfad74dc e25f9a9bb
+
+[2]+  Stopped                 git log
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ cd
+sparsh-tiger@TIGER02139:~$ cd 01-Assignment-1/
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ git clone https://github.com/schacon/simplegit-progit simplegit
+Cloning into 'simplegit'...
+remote: Enumerating objects: 13, done.
+remote: Total 13 (delta 0), reused 0 (delta 0), pack-reused 13
+Unpacking objects: 100% (13/13), 1.55 KiB | 25.00 KiB/s, done.
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ ls
+README  mylibgit  simplegit
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ git log
+fatal: your current branch 'master' does not have any commits yet
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ cd mylibgit/
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git log
+commit 7c79ad8bd74a34fd4d44a8ddba48b7d834448d8d (HEAD -> main)
+Author: Sparsh-Tiger <sparsh.srivastav@tigeranalytics.com>
+Date:   Tue Apr 4 19:20:58 2023 +0530
+
+    .gitignore
+
+commit 954d31fb6c7c773ed96c8b459bd600f5ae88cdde
+Author: Sparsh-Tiger <sparsh.srivastav@tigeranalytics.com>
+Date:   Tue Apr 4 17:51:18 2023 +0530
+
+    new_file.txt
+
+commit 2f20fe8869d7a1df7c9b7a9e2939c1a20533c6dc (origin/main, origin/HEAD)
+Merge: 9bfad74dc e25f9a9bb
+
+[3]+  Stopped                 git log
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git log -p -2
+commit 7c79ad8bd74a34fd4d44a8ddba48b7d834448d8d (HEAD -> main)
+Author: Sparsh-Tiger <sparsh.srivastav@tigeranalytics.com>
+Date:   Tue Apr 4 19:20:58 2023 +0530
+
+    .gitignore
+
+diff --git a/new_file.txt b/new_file.txt
+deleted file mode 100644
+index 7648eceaa..000000000
+--- a/new_file.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-new file modify
+
+
+[4]+  Stopped                 git log -p -2
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git log --stat
+commit 7c79ad8bd74a34fd4d44a8ddba48b7d834448d8d (HEAD -> main)
+Author: Sparsh-Tiger <sparsh.srivastav@tigeranalytics.com>
+Date:   Tue Apr 4 19:20:58 2023 +0530
+
+    .gitignore
+
+ new_file.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 954d31fb6c7c773ed96c8b459bd600f5ae88cdde
+Author: Sparsh-Tiger <sparsh.srivastav@tigeranalytics.com>
+Date:   Tue Apr 4 17:51:18 2023 +0530
+
+    new_file.txt
+
+[5]+  Stopped                 git log --stat
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git log --pretty=oneline
+7c79ad8bd74a34fd4d44a8ddba48b7d834448d8d (HEAD -> main) .gitignore
+954d31fb6c7c773ed96c8b459bd600f5ae88cdde new_file.txt
+2f20fe8869d7a1df7c9b7a9e2939c1a20533c6dc (origin/main, origin/HEAD) Merge pull request #6505 from libgit2/ethomson/extension_madness
+9bfad74dc029f163f296d09df56a42b97a38f4c1 Merge pull request #6533 from libgit2/ethomson/schannel-2
+c058aa87dce4c67a3b86b3349beebd64b7bedcd3 (tag: v1.6.3, origin/maint/v1.6) Merge pull request #6534 from libgit2/ethomson/v1.6.3
+a1826a8b1ba36027caaa03eb4d29474bd4420fef v1.6.3: update changelog
+2173ca8a4196c762fa34474b583ba6e9f25e67ff v1.6.3: update version numbers
+f15c8ac71a916bf186cd5ff81f07ca85eef82afb http: add SSPI authentication on Windows
+0d7f3f52918a00a2a07ba965eb65c6ac5d122867 utf8: add conversion with size and refactor names
+cff0d9b1cc2432ab6a6eab777cdfe230ee07fca1 http: refactor GSSAPI / negotiate / NTLM
+[6]+  Stopped                 git log --pretty=oneline
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git log --pretty=short
+commit 7c79ad8bd74a34fd4d44a8ddba48b7d834448d8d (HEAD -> main)
+Author: Sparsh-Tiger <sparsh.srivastav@tigeranalytics.com>
+
+    .gitignore
+
+commit 954d31fb6c7c773ed96c8b459bd600f5ae88cdde
+Author: Sparsh-Tiger <sparsh.srivastav@tigeranalytics.com>
+
+    new_file.txt
+
+commit 2f20fe8869d7a1df7c9b7a9e2939c1a20533c6dc (origin/main, origin/HEAD)
+Merge: 9bfad74dc e25f9a9bb
+Author: Edward Thomson <ethomson@edwardthomson.com>
+
+
+[7]+  Stopped                 git log --pretty=short
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git log --pretty=format:"%h - %an, %ar : %s"
+7c79ad8bd - Sparsh-Tiger, 74 minutes ago : .gitignore
+954d31fb6 - Sparsh-Tiger, 3 hours ago : new_file.txt
+2f20fe886 - Edward Thomson, 8 days ago : Merge pull request #6505 from libgit2/ethomson/extension_madness
+9bfad74dc - Edward Thomson, 8 days ago : Merge pull request #6533 from libgit2/ethomson/schannel-2
+c058aa87d - Edward Thomson, 2 weeks ago : Merge pull request #6534 from libgit2/ethomson/v1.6.3
+a1826a8b1 - Edward Thomson, 2 weeks ago : v1.6.3: update changelog
+2173ca8a4 - Edward Thomson, 2 weeks ago : v1.6.3: update version numbers
+f15c8ac71 - Edward Thomson, 3 weeks ago : http: add SSPI authentication on Windows
+0d7f3f529 - Edward Thomson, 3 weeks ago : utf8: add conversion with size and refactor names
+
+[8]+  Stopped                 git log --pretty=format:"%h - %an, %ar : %s"
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git log --pretty=format:"%h %s" --graph
+* 7c79ad8bd .gitignore
+* 954d31fb6 new_file.txt
+*   2f20fe886 Merge pull request #6505 from libgit2/ethomson/extension_madness
+|\
+| * e25f9a9bb repo: don't allow repeated extensions
+* |   9bfad74dc Merge pull request #6533 from libgit2/ethomson/schannel-2
+|\ \
+| * | f15c8ac71 http: add SSPI authentication on Windows
+| * | 0d7f3f529 utf8: add conversion with size and refactor names
+| * | cff0d9b1c http: refactor GSSAPI / negotiate / NTLM auth
+| * | f68f542eb http: introduce schannel streams for windows
+* | |   c058aa87d Merge pull request #6534 from libgit2/ethomson/v1.6.3
+|\ \ \
+| |/ /
+
+[9]+  Stopped                 git log --pretty=format:"%h %s" --graph
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git log --since=2.weeks
+commit 7c79ad8bd74a34fd4d44a8ddba48b7d834448d8d (HEAD -> main)
+Author: Sparsh-Tiger <sparsh.srivastav@tigeranalytics.com>
+Date:   Tue Apr 4 19:20:58 2023 +0530
+
+    .gitignore
+
+commit 954d31fb6c7c773ed96c8b459bd600f5ae88cdde
+Author: Sparsh-Tiger <sparsh.srivastav@tigeranalytics.com>
+Date:   Tue Apr 4 17:51:18 2023 +0530
+
+    new_file.txt
+
+commit 2f20fe8869d7a1df7c9b7a9e2939c1a20533c6dc (origin/main, origin/HEAD)
+Merge: 9bfad74dc e25f9a9bb
+
+[10]+  Stopped                 git log --since=2.weeks
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git commit --amend
+hint: Waiting for your editor to close the file... 'C:\Program Files\Notepad++\notepad++.exe' -multiInst -notabar -nosession -noPlugin: 1: C:\Program Files\Notepad++\notepad++.exe: not found
+error: There was a problem with the editor ''C:\Program Files\Notepad++\notepad++.exe' -multiInst -notabar -nosession -noPlugin'.
+Please supply the message using either -m or -F option.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git checkout -- README.md
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitignore.txt
+        new_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ rename
+
+Command 'rename' not found, but can be installed with:
+
+sudo apt install rename
+
+sparsh-tiger@TIGER02139:~/01-Assignment-1/mylibgit$ cd
+sparsh-tiger@TIGER02139:~$ cd 01-Assignment-1/
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ git clone https://github.com/schacon/ticgit
+Cloning into 'ticgit'...
+remote: Enumerating objects: 1857, done.
+remote: Total 1857 (delta 0), reused 0 (delta 0), pack-reused 1857
+Receiving objects: 100% (1857/1857), 334.06 KiB | 2.93 MiB/s, done.
+Resolving deltas: 100% (837/837), done.
+sparsh-tiger@TIGER02139:~/01-Assignment-1$ cd ticgit/
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git remote
+origin
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git remote -v
+origin  https://github.com/schacon/ticgit (fetch)
+origin  https://github.com/schacon/ticgit (push)
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git remote add pb https://github.com/paulboone/ticgit
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git remote -v
+origin  https://github.com/schacon/ticgit (fetch)
+origin  https://github.com/schacon/ticgit (push)
+pb      https://github.com/paulboone/ticgit (fetch)
+pb      https://github.com/paulboone/ticgit (push)
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git fetch pb
+remote: Enumerating objects: 43, done.
+remote: Counting objects: 100% (22/22), done.
+remote: Total 43 (delta 22), reused 22 (delta 22), pack-reused 21
+Unpacking objects: 100% (43/43), 5.99 KiB | 12.00 KiB/s, done.
+From https://github.com/paulboone/ticgit
+ * [new branch]      master     -> pb/master
+ * [new branch]      ticgit     -> pb/ticgit
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git fetch origin
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git push origin master
+Username for 'https://github.com': ^Z
+[11]+  Stopped                 git push origin master
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git remote show pb
+* remote pb
+  Fetch URL: https://github.com/paulboone/ticgit
+  Push  URL: https://github.com/paulboone/ticgit
+  HEAD branch: master
+  Remote branches:
+    master tracked
+    ticgit tracked
+  Local ref configured for 'git push':
+    master pushes to master (local out of date)
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git remote rename pb paul
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git remote
+origin
+paul
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git remote remove paul
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git remote
+origin
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git tag
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git tag -a v1.1 -m "my version 1.1"
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git tag
+v1.1
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git show
+commit 847256809a3d518cd36b8f81859401416fe8d945 (HEAD -> master, tag: v1.1, origin/master, origin/HEAD)
+Author: Jeff Welling <Jeff.Welling@Gmail.com>
+Date:   Tue Apr 26 17:29:17 2011 -0700
+
+    Added note to clarify which is the canonical TicGit-ng repo
+
+diff --git a/README.mkd b/README.mkd
+index ab92035..9ea9ff9 100644
+--- a/README.mkd
++++ b/README.mkd
+@@ -1,3 +1,6 @@
++Note: the original TicGit author has pulled all the TicGit-ng changes into his repository, creating a potentially confusing situation. The schacon TicGit repo, t
+[12]+  Stopped                 git show
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git tag v1.2-lw
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git tag
+v1.1
+v1.2-lw
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git show v1.2-lw
+commit 847256809a3d518cd36b8f81859401416fe8d945 (HEAD -> master, tag: v1.2-lw, tag: v1.1, origin/master, origin/HEAD)
+Author: Jeff Welling <Jeff.Welling@Gmail.com>
+Date:   Tue Apr 26 17:29:17 2011 -0700
+
+    Added note to clarify which is the canonical TicGit-ng repo
+
+diff --git a/README.mkd b/README.mkd
+index ab92035..9ea9ff9 100644
+--- a/README.mkd
++++ b/README.mkd
+@@ -1,3 +1,6 @@
++Note: the original TicGit author has pulled all the TicGit-ng changes into his repository, creating a potentially confusing situation. The schacon TicGit repo, t
+[13]+  Stopped                 git show v1.2-lw
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git log --pretty=oneline
+847256809a3d518cd36b8f81859401416fe8d945 (HEAD -> master, tag: v1.2-lw, tag: v1.1, origin/master, origin/HEAD) Added note to clarify which is the canonical TicGit-ng repo
+cd95b7eb8d8fb7560dc820b1e20edff427429707 Merge branch 'hotfix-1.0.2.2'
+e4932587f8eee941565849c8ac9fa56bfb4a000a Bumped version to 1.0.2.2
+470d7afa8de9aa612cf711a7c07d702bdbcc3a1d Fixed bug where 'ti comment' was prepopulated with a ruby object
+b2015390494e8ae2e10393c95df89ee44ce4ec1a Merge branch 'hotfix-1.0.2.1'
+871eb64b61414d9633b8056ddb3d66e77609f8a6 Bumped version to 1.0.2.1
+37092ec5e38287b98b6b3d52bb4c0a0ae2d776b0 Fixed bug where the comments (#s) appeared as first comment
+27afa7ce172ecc2b44bbda855e6caca1d6c7f7c1 Merge branch 'release-1.0.2'
+48f34b3b28a3df2278430cf8b87b45c971c67d95 Bumped version to 1.0.2
+4f7043d484f9ff7852cec1cbc0af823961642fa8 Added *.swp to .gitignore, for files vim
+[14]+  Stopped                 git log --pretty=oneline
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git tag -a v1.2 9fceb02
+fatal: Failed to resolve '9fceb02' as a valid ref.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git puch origin v1.1
+git: 'puch' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git push origin v1.1
+Username for 'https://github.com': schacon/simplegit.git
+Password for 'https://schacon/simplegit.git@github.com':
+[15]+  Stopped                 git push origin v1.1
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git tag -d v1.2-lw
+Deleted tag 'v1.2-lw' (was 8472568)
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git checkout v1.1
+Note: switching to 'v1.1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 8472568 Added note to clarify which is the canonical TicGit-ng repo
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git checkout -b version2 v1.1
+Switched to a new branch 'version2'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git config --global alias.co checkout
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git config --global alias.co branch
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git config --global alias.co checkout
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git config --global alias.br br
+anch
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git config --global alias.unstage 'reset HEAD --'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git config --global alias.last 'log -1 HEAD'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git last
+commit 847256809a3d518cd36b8f81859401416fe8d945 (HEAD -> version2, tag: v1.1, origin/master, origin/HEAD, master)
+Author: Jeff Welling <Jeff.Welling@Gmail.com>
+Date:   Tue Apr 26 17:29:17 2011 -0700
+
+    Added note to clarify which is the canonical TicGit-ng repo
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git config --global alias.visual '!gitk'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git add README test.rb LICENSE
+fatal: pathspec 'README' did not match any files
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch testing
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git log --oneline --decorate
+8472568 (HEAD -> version2, tag: v1.1, origin/master, origin/HEAD, testing, master) Added note to clarify which is the canonical TicGit-ng repo
+cd95b7e Merge branch 'hotfix-1.0.2.2'
+e493258 Bumped version to 1.0.2.2
+470d7af Fixed bug where 'ti comment' was prepopulated with a ruby object
+b201539 Merge branch 'hotfix-1.0.2.1'
+871eb64 Bumped version to 1.0.2.1
+37092ec Fixed bug where the comments (#s) appeared as first comment
+27afa7c Merge branch 'release-1.0.2'
+48f34b3 Bumped version to 1.0.2
+4f7043d Added *.swp to .gitignore, for files vim uses
+31db515 fix rdoc rake task
+0178a68 rspec 2 task fixed
+f496146 Rakefile
+
+[16]+  Stopped                 git log --oneline --decorate
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git checkout testing
+Switched to branch 'testing'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git log --oneline --decorate --graph --all
+* 8472568 (HEAD -> master, tag: v1.1, origin/master, origin/HEAD, version2, testing) Added note to clarify which is the canonical TicGit-ng repo
+*   cd95b7e Merge branch 'hotfix-1.0.2.2'
+|\
+| * e493258 Bumped version to 1.0.2.2
+| * 470d7af Fixed bug where 'ti comment' was prepopulated with a ruby object
+|/
+*   b201539 Merge branch 'hotfix-1.0.2.1'
+|\
+| * 871eb64 Bumped version to 1.0.2.1
+| * 37092ec Fixed bug where the comments (#s) appeared as first comment
+|/
+*   27afa7c Merge branch 'release-1.0.2'
+|\
+
+[17]+  Stopped                 git log --oneline --decorate --graph --all
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git checkout -b iss53
+Switched to a new branch 'iss53'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch iss53
+fatal: A branch named 'iss53' already exists.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ vim index.html
+
+[18]+  Stopped                 vim index.html
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git checkout -b hotfix
+Switched to a new branch 'hotfix'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git commit -a -m 'Fix broken email address'
+On branch hotfix
+nothing to commit, working tree clean
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git merge hotfix
+Already up to date.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch -d hotfix
+Deleted branch hotfix (was 8472568).
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git merge master
+Already up to date.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git merge iss53
+Already up to date.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch
+  iss53
+* master
+  testing
+  version2
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch -v
+  iss53    8472568 Added note to clarify which is the canonical TicGit-ng repo
+* master   8472568 Added note to clarify which is the canonical TicGit-ng repo
+  testing  8472568 Added note to clarify which is the canonical TicGit-ng repo
+  version2 8472568 Added note to clarify which is the canonical TicGit-ng repo
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch --merged
+  iss53
+* master
+  testing
+  version2
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch --no-merged
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch -d testing
+Deleted branch testing (was 8472568).
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch --move version2 version1
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch
+  iss53
+* master
+  version1
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git push --set-upstream origin version1
+Username for 'https://github.com': ^Z
+[19]+  Stopped                 git push --set-upstream origin version1
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch --all
+  iss53
+* master
+  version1
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+  remotes/origin/ticgit
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git push origin --delete version1
+Username for 'https://github.com': ^Z
+[20]+  Stopped                 git push origin --delete version1
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch --move master main
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch
+  iss53
+* main
+  version1
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git push --set-upstream origin main
+Username for 'https://github.com': Sparsh-Tiger
+Password for 'https://Sparsh-Tiger@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/schacon/ticgit/'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git fetch origin
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git fetch teamone
+fatal: 'teamone' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git branch
+  iss53
+* main
+  version1
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git checkout version1
+Switched to branch 'version1'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git rebase main
+Current branch version1 is up to date.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git rebase master server
+fatal: invalid upstream 'master'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git rebase main server
+fatal: fatal: no such branch/commit 'server'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git rebase main
+Current branch version1 is up to date.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ git clone https://github.com/tonychacon/blink
+Cloning into 'blink'...
+remote: Enumerating objects: 23, done.
+remote: Total 23 (delta 0), reused 0 (delta 0), pack-reused 23
+Unpacking objects: 100% (23/23), 2.66 KiB | 25.00 KiB/s, done.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit$ cd blink
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git checkout -b slow-blink
+Switched to a new branch 'slow-blink'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ sed -i 's/1000/3000/' blink.ino
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git diff --word-diff
+diff --git a/blink.ino b/blink.ino
+index 15b9911..a6cc5a5 100644
+--- a/blink.ino
++++ b/blink.ino
+@@ -18,7 +18,7 @@ void setup() {
+// the loop routine runs over and over again forever:
+void loop() {
+  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+  [-delay(1000);-]{+delay(3000);+}               // wait for a second
+  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
+  [-delay(1000);-]{+delay(3000);+}               // wait for a second
+}
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git commit -a -m 'Change delay to 3 seconds'
+[slow-blink 6d4e432] Change delay to 3 seconds
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git push origin slow-blink
+Username for 'https://github.com': Sparsh-Tiger
+Password for 'https://Sparsh-Tiger@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/tonychacon/blink/'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git push origin slow-blink
+Username for 'https://github.com': Sparsh-Tiger
+Password for 'https://Sparsh-Tiger@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/tonychacon/blink/'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git remote add upstream https://github.com/schacon/blink
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git fetch upstream
+From https://github.com/schacon/blink
+ * [new branch]      master     -> upstream/master
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git merge upstream/master
+Auto-merging blink.ino
+CONFLICT (content): Merge conflict in blink.ino
+Automatic merge failed; fix conflicts and then commit the result.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ vim blink.ino
+
+[21]+  Stopped                 vim blink.ino
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git add blink.ino
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git commit
+hint: Waiting for your editor to close the file... 'C:\Program Files\Notepad++\notepad++.exe' -multiInst -notabar -nosession -noPlugin: 1: C:\Program Files\Notepad++\notepad++.exe: not found
+error: There was a problem with the editor ''C:\Program Files\Notepad++\notepad++.exe' -multiInst -notabar -nosession -noPlugin'.
+Please supply the message using either -m or -F option.
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git push origin slow-blink
+Username for 'https://github.com': Sparsh-Tiger
+Password for 'https://Sparsh-Tiger@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/tonychacon/blink/'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git config --global user.name "Sparsh-Tiger"
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git config --global user.email "sparsh.srivastav@tigeranalytics.com"
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git config -l
+user.name=Sparsh-Tiger
+user.email=sparsh.srivastav@tigeranalytics.com
+core.editor='C:\Program Files\Notepad++\notepad++.exe' -multiInst -notabar -nosession -noPlugin
+init.defaultbranch=main
+alias.co=checkout
+alias.br=branch
+alias.unstage=reset HEAD --
+alias.last=log -1 HEAD
+alias.visual=!gitk
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+
+[22]+  Stopped                 git config -l
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git push origin slow-blink
+Username for 'https://github.com': Sparsh-Tiger
+Password for 'https://Sparsh-Tiger@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/tonychacon/blink/'
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git remote set-url origin
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git remote set-url origin https://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@github.com/Sparsh-Tiger/01-Assignment-1.git
+sparsh-tiger@TIGER02139:~/01-Assignment-1/ticgit/blink$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://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@github.com/Sparsh-Tiger/01-Assignment-1.git'
